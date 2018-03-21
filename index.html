@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to Inkos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="inkos.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="inkos.js"></script>
+
+</head>
+<body>
+
+  <!-- Start of navigation bar -->
+  <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header" id="navBar" >
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="index.html"><img src ="images/logo.png" id="logo"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="how-to-survive.html">HOW TO SURVIVE</a></li>
+          <li><a href="find-shelter.html">FIND SHELTER</a></li>
+          <li><a href="request-help.html">REQUEST HELP</a></li>
+          <li><a href="volunteer-help.html">VOLUNTEER HELP</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <p class="navbar-text slogan">Your solution to disaster preparation </p>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End of navigation bar -->
+
+  <!-- Start of index header -->
+  <div class="container">
+    <!-- Header content -->
+    <h1 id="web-head">Your solution to disaster preparation</h1>
+    </br>
+
+    <!-- Start of collapsible menus -->
+    <div class="panel-group" id="accordion">
+      <!-- How to survive collapsible menu -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse0">What is Inkos?</a>
+          </h4>
+        </div>
+        <div id="collapse0" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <p>Keeping track of emergency warnings and obtaining information about safe shelters can be hard due to the many different resources offered by individual states and counties. Plus, in some cases it's often a better idea to seek shelter in nearby buildings and houses than official shelters. Neighbors and people close by may also be in a better position to help people in crises but may be unaware of who needs their help. Inkos provides a one-stop resource for instructions on how to survive in various disasters, information on nearby shelters, and also allows you to request for help from volunteers or volunteer your own help to somebody in need.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">How To Survive</a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Learn how to prepare for natural disasters in our How To Survive page!</p>
+            <p>Select the natural disaster you wish to learn about, and view detailed instructions on how to minimize damage. Scroll down to see different information on preparing before disasters and rebuilding after disasters</p>
+            <a href="how-to-survive.html">Go to the How To Survive page</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Find shelter collapsible menu -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Find Shelter</a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Find the nearest possible shelters to your address in our Find Shelters page!</p>
+            <p>Input your address or ZIP code, and see the closest shelters displayed on a map. Click on the corresponding shelter in the list for more information, including name, address, type, capacity, and phone number.</p>
+            <a href="find-shelter.html">Go to the Find Shelters page</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Request help collapsible menu -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Request Help</a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Request for help to the public in our Request Help page!</p>
+            <p>Fill out the required fields on the form, including your name, address, contact, date and time requiring help. To inform potential volunteers, also write down some details about your situation. Submit to post your request on our website listings. </p>
+            <a href="request-help.html">Go to the Request Help page</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Volunteer help collapsible menu -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Volunteer Help</a>
+          </h4>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Volunteer to help the public in our Request Help page!</p>
+            <p>Input your address or ZIP code, and see the list of closest requests for help. Click on a request in the list for more information. If you wish to volunteer, fill out the required fields on the form, including your name and contact. Submit to send your information to the requester and wait for contact.  </p>
+            <a href="volunteer-help.html">Go to the Volunteer Help page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of collapsible menus -->
+  </div>
+  </br>
+  <!-- End of index header -->
+  
+
+  <!--Start of weather bar -->
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-body" id="weather">
+        <div class="row">
+
+            <!--Start of weather for a particular day -->
+            <div class="col-sm-3" id="weather_on_day">
+              <a href="https://www.wunderground.com/history/airport/KPWK/2017/11/21/DailyHistory.html?req_city=Evanston&req_state=IL&req_statename=Illinois&reqdb.zip=60201&reqdb.magic=1&reqdb.wmo=99999" target="_blank">
+                <p>Monday, Dec 1</p>
+                <img src="images/icons8-partly-cloudy-day.png"> <span id="degree"> 38 F </span>
+                  <p>Partly cloudy</p>
+              </a>
+            </div>
+            <!--End of weather for a particular day -->
+
+            <!--Start of weather for a particular day -->
+            <div class="col-sm-3" id="weather_on_day">
+              <a href="https://www.wunderground.com/history/airport/KPWK/2017/11/22/DailyHistory.html?req_city=Evanston&req_state=IL&req_statename=Illinois&reqdb.zip=60201&reqdb.magic=1&reqdb.wmo=99999" target="_blank">
+                <p>Tuesday, Dec 2</p>
+                <img src="images/icons8-windy-weather.png"> <span id="degree"> 37 F </span>
+                  <p>Windy</p>
+              </a>
+            </div>
+            <!--End of weather for a particular day -->
+
+            <!--Start of weather for a particular day -->
+            <div class="col-sm-3" id="weather_on_day">
+              <a href="https://www.wunderground.com/history/airport/KPWK/2017/11/23/DailyHistory.html?req_city=Evanston&req_state=IL&req_statename=Illinois&reqdb.zip=60201&reqdb.magic=1&reqdb.wmo=99999" target="_blank">
+                <p>Wednesday, Dec 3</p>
+                <img src="images/icons8-partly-cloudy-day.png"> <span id="degree"> 37 F </span>
+                  <p>Partly cloudy</p>
+              </a>
+            </div>
+            <!--End of weather for a particular day -->
+
+            <!--Start of weather for a particular day -->
+            <div class="col-sm-3" id="weather_on_day">
+              <a href="https://www.wunderground.com/history/airport/KPWK/2017/11/24/DailyHistory.html?req_city=Evanston&req_state=IL&req_statename=Illinois&reqdb.zip=60201&reqdb.magic=1&reqdb.wmo=99999" target="_blank">
+                <p>Thursday, Dec 4</p>
+                <img src="images/icons8-partly-cloudy-day.png"> <span id="degree"> 36 F </span>
+                  <p>Partly cloudy</p>
+              </a>
+            </div>
+            <!--End of weather for a particular day -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of weather bar -->
+
+
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+      	<!-- Start Item -->
+        <div class="item active">
+        	<a target="_blank" href="https://www.accuweather.com/en/weather-news/quick-hitting-cold-strong-winds-to-pierce-midwestern-northeastern-us-this-weekend/70003307">
+            <img src="images/news11.jpg" class="carousel_pic">
+            <div class="carousel-caption">
+              <h4>Quick-hitting cold, strong winds to pierce Midwestern, Northeastern US this weekend</h4>
+            </div>
+          </a>
+        </div>
+        <!-- End Item -->
+
+ 		<!-- Start Item --> 
+        <div class="item">
+       		<a target="_blank" href="http://abcnews.go.com/US/cold-damaging-winds-move-storm-system-midwest-northeast/story?id=51271280">
+            <img src="images/news22.jpg" class="carousel_pic">
+            <div class="carousel-caption">
+              <h4>Cold and gusty winds move in behind storm system in Midwest and Northeast</h4>
+            </div>
+          </a>
+        </div>
+        <!-- End Item -->
+
+        <!-- Start Item --> 
+        <div class="item">
+          <a target="_blank" href="http://www.chicagotribune.com/news/nationworld/ct-new-england-severe-weather-20171030-story.html">
+            <img src="images/news1.jpg" class="carousel_pic">
+            <div class="carousel-caption">
+              <h4>Utilities warn that power could be out for days in Northeast</h4>
+            </div>
+          </a>
+        </div>
+        <!-- End Item -->
+
+        <div class="item">
+          <a target="_blank" href="https://weather.com/news/news/2017-11-18-severe-storms-indiana-damage">
+            <img src="images/news33.jpg" class="carousel_pic">
+            <div class="carousel-caption">
+              <h4>Line of severe storms moving through Midwest damages Indiana Walmart</h4>
+            </div>
+          </a>
+         </div>
+         <!-- End Item -->
+
+         <div class="item">
+          <a target="_blank" href="http://abc7chicago.com/weather/chicago-to-see-coldest-halloween-in-over-2-decades/2585070/">
+            <img src="images/news2.jpg" width="760px" class="carousel_pic">
+            <div class="carousel-caption">
+              <h4>Chicago to see coldest Halloween in over two decades</h4>
+            </div>
+          </a>
+         </div>
+         <!-- End Item -->
+                
+      </div><!-- End Carousel Inner -->
+
+
+    <ul class="list-group col-sm-4">
+      <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active"><a href="#"><h4>Quick-hitting cold, strong winds to pierce Midwestern, Northeastern US this weekend</h4></a></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="list-group-item"><a href="#"><h4>Cold and gusty winds move in behind storm system in Midwest and Northeast</h4></a></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="list-group-item"><a href="#"><h4>Utilities warn that power could be out for days in Northeast</h4></a></li>
+      <li data-target="#myCarousel" data-slide-to="3" class="list-group-item"><a href="#"><h4>Line of severe storms moving through Midwest damages Indiana Walmart</h4></a></li>
+      <li data-target="#myCarousel" data-slide-to="4" class="list-group-item"><a href="#"><h4>Chicago to see coldest Halloween in over two decades </h4></a></li>
+    </ul>
+
+      <!-- Controls -->
+      <div class="carousel-controls">
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+      </div>
+
+    </div><!-- End Carousel -->
+    </br>
+  </div>
+  </br>
+  </br>
+  </br>
+  <!-- Footer -->
+
+  <div id="footer">
+    Contact Us - help@inkos.com
+  </div>
+</body>
+</html>

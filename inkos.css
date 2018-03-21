@@ -1,0 +1,355 @@
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%; 
+	position: relative;
+	margin: 0;
+}
+
+/* Common CSS */
+
+/* Fonts */
+#web-head{
+	font-family: bebas_neue_regularregular;
+}
+
+@font-face {
+    font-family: 'bebas_neue_regularregular';
+    src: url('bebasneue_regular-webfont.woff2') format('woff2'),
+         url('bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Navigation Bar */
+#navBar {
+	height: 70px;
+}
+
+.navbar{
+	background-color: #4067a5;
+	border: #4067a5;
+}
+
+.navbar .navbar-collapse{
+	position: relative;
+	top: 12px;
+	font-size: 14px;
+}
+
+.navbar-brand {
+	position:relative; top: -14px;
+	z-index: 1;
+}
+
+.navbar-inverse .navbar-nav>li> a{
+	color: #ccc;
+}
+
+.navbar-inverse .navbar-nav>.active> a, 
+.navbar-inverse .navbar-nav>.active> a:focus, 
+.navbar-inverse .navbar-nav>.active> a:hover {
+  background: #163c7a;
+}
+
+.navbar-inverse .navbar-nav>.slogan{
+	font-size: 14px;
+	font-style: italic;
+	color: white;
+}
+
+/* Footer */
+#footer{
+	background-color: #4067a5;
+	width: 100%;
+	text-align: center;
+	color: white;
+	margin-top: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: absolute;
+	bottom: 0px;
+}
+
+/* Instruction Font */
+#clickInstructions{
+	font-size: 14px;
+	font-style: italic;
+}
+
+/* Table Style */
+.highlight { 
+	background-color: #b5b7bc; 
+}
+
+.stop-scrolling{
+	height: 100%;
+	overflow: hidden;
+}
+
+/* CSS for Index Page */
+
+/* Weather Bar */
+.panel-default{
+	border-radius: 0px;
+}
+
+#weather{
+	background-color: #eee;
+}
+
+#weather_on_day{
+	text-align: center;
+}
+
+#degree{
+	font-size: 28px;
+	position: relative;
+	top:5px;
+}
+
+#weather_on_day > a{
+	text-decoration: none;
+	color: #000;
+}
+
+#weather_on_day > a:hover{
+	text-decoration: none;
+	color: #5079ba;
+}
+
+/* Carousel */
+#myCarousel .carousel-caption {
+    left:0;
+	right:0;
+	bottom:0;
+	text-align:left;
+	padding:10px;
+	background:rgba(0,0,0,0.6);
+	text-shadow:none;
+}
+
+#myCarousel .list-group {
+	position:absolute;
+	top:0;
+	right:0;
+	width: 378px;
+}
+#myCarousel .list-group-item {
+	border-radius:0px;
+	cursor:pointer;
+	border: none;
+	width: 378px;
+	
+}
+
+.carousel_pic{
+	width: 760px;
+}
+
+.active { 
+    background-color: yellow;
+}
+
+#myCarousel .list-group .active {
+	background-color: #eee;
+	color: #000;
+	width: 378px;
+}
+
+.list-group-item>a{
+	text-decoration: none;
+	color:#000;
+}
+
+.list-group-item>a:hover{
+	text-decoration: none;
+	color:#555;
+}
+
+a:hover> .carousel-caption >h4 {
+	text-decoration: none;
+	color: #bcdefa;
+}
+
+@media (min-width: 1200px) { 
+	#myCarousel {padding-right:33.3333%;}
+	#myCarousel .carousel-controls {display:none;} 	
+}
+@media (max-width: 991px) { 
+	.carousel-caption p,
+	#myCarousel .list-group {display:none;} 
+	
+}
+
+@media (max-width: 1199px) and (min-width: 992px){
+	h4 { font-size: 14px; }
+	#myCarousel {padding-right:40.3333%;}
+	#myCarousel .carousel-controls {display:none;} 
+}
+
+/* CSS for Volunteer Help Page */
+
+/* Volunteer Table */
+#volTableDiv {
+	display: none;
+}
+
+
+#volTable {
+	cursor: pointer;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.volTable:active{
+	background: yellow;
+}
+
+#volTable>tbody>tr:hover,
+#volTable>tbody>tr:focus{
+	background-color: #ccc;
+
+}
+
+
+/* Volunteer Modal */
+#volunteerModalHeader{
+	display: inline;
+	font-size: 16px;
+}
+
+/* CSS for Find Shelter Page */
+
+/* Shelter Map Image */
+#shelterMapImage{
+	max-width: 60%;
+	height: auto;
+}
+
+/* Shelter Table */
+#shelterTableDiv {
+	display: none;
+}
+
+
+#shelterTable {
+	cursor: pointer;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.shelterTable:active{
+	background: yellow;
+}
+
+/* Shelter Modal */
+#shelterImage{
+	max-width: 50%
+}
+
+#shelterModalHeader{
+	display: inline;
+	font-size: 16px;
+}
+
+#shelterTable>tbody>tr:hover,
+#shelterTable>tbody>tr:focus{
+	background-color: #ccc;
+
+}
+
+/* CSS for How to Survive Page */
+
+/* Navigation table */
+.disasters-table {
+	width: 100%;
+    table-layout: fixed;
+}
+
+/* START added 9:00PM 11/20 */	
+.disasters-cell {
+    border: 10px solid white;
+    background-color: #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color:black;
+}
+
+.disasters-cell> a> p:focus,
+.disasters-cell> a> p:hover{
+	color: #5079ba;	
+}
+
+.disasters-cell> a:focus,
+.disasters-cell> a:hover{
+	text-decoration: none;
+}
+
+.selected{
+	background-color: #bbb;
+}
+
+.selected> a> p:focus,
+.selected> a> p:hover{
+	color: #fff;	
+}
+
+.selected> a> p{
+	color: white;
+}
+/* END added 9:00PM 11/20 */
+
+.link-box{
+	font-size: 16px;
+	text-align: center;
+}
+
+.image-icon{
+	max-height: 15%;
+	max-width: 15%;
+}
+
+.text-icon{
+	font-size: 15px;
+	font-weight: normal;
+	display: inline;
+	color: #000;
+}
+
+/* START added 9:00PM 11/20 */
+.selectionButton{
+	background-color: #eee;
+	border: 10px solid white;
+	padding: 20px;
+}
+
+.selectionButton >a >p{
+	color: #000;
+}
+
+.selectionButton >a> p:hover{
+	color: #5079ba;	
+}
+
+.selectionButton >a:hover{
+	text-decoration: none;
+}
+/* END added 9:00PM 11/20 */
+
+/* Instructions text */
+.text-box {
+    font-size: 18px;
+}
